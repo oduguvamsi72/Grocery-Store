@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Glassmorphic Card */
+        .thank-you-box {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            max-width: 420px;
+            width: 90%;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Checkmark Icon */
+        .checkmark {
+            display: inline-block;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: rgba(40, 167, 69, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+            animation: popIn 0.5s ease-in-out;
+            box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
+        }
+
+        @keyframes popIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .checkmark::before {
+            content: '✔';
+            font-size: 40px;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Heading */
+        h1 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        /* Subtext */
+        p {
+            font-size: 16px;
+            color: #ddd;
+            margin-bottom: 20px;
+        }
+
+        /* Home Button */
+        .home-btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #28a745;
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s ease-in-out;
+            box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
+            font-weight: bold;
+        }
+
+        .home-btn:hover {
+            background: #3aa150;
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(40, 167, 69, 0.9);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="thank-you-box">
+        <div class="checkmark"></div> <!-- Green Checkmark Animation -->
+        <h1>Payment Successful!</h1>
+        <p>Thank you for your order. Your payment has been processed successfully.</p>
+        <a href="index.html" class="home-btn">Go to Home</a>
+    </div>
+
+</body>
+</html>

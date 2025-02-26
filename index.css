@@ -1,0 +1,570 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #fbe3e8, #ffe4c4);
+}
+
+/* --------------------------- Banner with Header --------------------------------- */
+.banner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #f2d53c;
+}
+
+.banner-img {
+    width: 100%;
+    max-height: 592px;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    /* Ensures a fixed height for proper positioning */
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* Keeps it behind everything */
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: black;
+    z-index: 2;
+    /* Ensures it's on top of the banner */
+}
+
+.banner-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #f2d53c;
+    text-shadow: 5px 5px 10px black;
+    font-weight: bold;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fceed1;
+    text-shadow: 5px 5px 5px black;
+
+}
+
+.btn {
+    padding: 6px 12.5px;
+    background: linear-gradient(45deg, #ff5733, #ffcc00);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #ffcc00, #ff5733);
+    transform: scale(1.05);
+}
+.btn1 {
+    padding: 6px 12.5px;
+    background: linear-gradient(45deg, #ffcc00, #ff5733);
+    color:black;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.btn1:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #ff5733, #ffcc00);
+
+}
+
+
+/* --------------------------- Header inside Banner ------------------------------- */
+header {
+    position: fixed;
+    /* Changed from absolute to fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    /* Ensures the header stays on top */
+}
+
+.head {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 200px;
+    width: auto;
+    margin-right: 15px;
+    margin-left: -30px;
+}
+
+.title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.title1 {
+    color: tomato;
+}
+
+/* --------------------------- Navbar --------------------------------------------- */
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+/* --------------------------- Hot Deals Section --------------------------------- */
+.sec {
+    background-color: #ead6cd;
+}
+
+.hot-deals {
+    text-align: center;
+    padding: 40px 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Scrollable Slider Wrapper */
+.deals-slider {
+    width: 85%;
+    /* Adds space to edges */
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE/Edge */
+    padding-bottom: 15px;
+}
+
+/* Hide Scrollbar for Chrome/Safari */
+.deals-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Card Container */
+.deals-container {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/* Individual Card Styling */
+.deal-card {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 270px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    background: linear-gradient(135deg, #fff5d7, #f9ac80);
+    padding: 12px;
+    scroll-snap-align: center;
+    cursor: grab;
+    border: 2px solid rgba(255, 87, 51, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hover Effect */
+.deal-card:hover {
+    transform: scale(1.06);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    border-color: #444;
+}
+
+/* Image Styling */
+.deal-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Title Styling */
+.deal-card h3 {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #17203D;
+    font-weight: bold;
+}
+
+/* Description Styling */
+.deal-card p {
+    font-size: 14px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Button Styling */
+.deal-card button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.deal-card button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+/* ----------------------categories------------------------------------- */
+/* ======== Categories Section ======== */
+.categories {
+    text-align: center;
+    padding: 60px 0;
+    width: 100%;
+}
+
+/* Section Title */
+.categories h2 {
+    font-size: 30px;
+    color: #17203D;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Section Description */
+.categories-desc {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Flexbox Layout for Categories */
+.categories-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 0 5%;
+}
+
+/* Modern Category Card Styling */
+.category-card {
+    flex: 1 1 220px;
+    max-width: 250px;
+    background: linear-gradient(135deg, #fff5d7, #ffc3a0);
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hover Effect */
+.category-card:hover {
+    transform: scale(1.06);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Category Image */
+.category-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect on Image */
+.category-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Title Styling */
+.category-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #172d13;
+    font-weight: bold;
+}
+
+/* Description Styling */
+.category-card p {
+    font-size: 14px;
+    color: #555;
+    padding: 0 10px;
+    line-height: 1.4;
+}
+
+/* Explore More Button */
+.category-card button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: auto;
+}
+
+.category-card button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .categories-container {
+        justify-content: space-around;
+    }
+
+    .category-card {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* ------------------FAQ'S------------------------------------ */
+.faq {
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #17203D;
+    font-weight: 600;
+}
+
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    text-align: left;
+    width: calc(40% - 10px);
+    /* Two FAQs per row */
+}
+
+.faq-item:hover {
+    transform: scale(1.02);
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.faq-item p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Responsive: Show one FAQ per row on small screens */
+@media (max-width: 600px) {
+    .faq-item {
+        width: 100%;
+    }
+}
+
+/* --------------------footer---------------------------------- */
+/* Footer Styling */
+.footer {
+    background: linear-gradient(135deg, #fbe3e8, #ffe4c4);
+    padding: 40px 20px;
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Flexbox Layout */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+/* Section Titles */
+.footer-section h3 {
+    font-size: 20px;
+    color: #ff5733;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* About Text */
+.footer-section p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Quick Links */
+.footer-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.quick-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.quick-links a {
+    display: inline-block;
+    font-size: 20px;
+    color: #ff5733;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.quick-links a:hover {
+    color: #e64a19;
+    transform: scale(1.2);
+}
+
+
+/* Social Media Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    font-size: 22px;
+    color: #ff5733;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+    color: #e64a19;
+    transform: scale(1.2);
+}
+
+/* Bottom Copyright */
+.footer-bottom {
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}

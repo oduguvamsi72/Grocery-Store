@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Fresh Products</title>
+    <link rel="stylesheet" href="dailyp.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <!-- Title Section -->
+    <header class="title-section">
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Back
+        </a>
+        <h1><i class="fas fa-shopping-basket"></i> Daily Fresh Products</h1>
+        <p>"Fresh essentials for a healthy lifestyle!" 🛒</p>
+        <!-- Cart Icon -->
+        <a href="addtocart.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i> Cart
+        </a>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="search-bar" placeholder="Search for daily products..." onkeyup="searchProducts()">
+        </div>
+        <p class="search-info">Find your everyday essentials here.</p>
+    </div>
+
+    <!-- Daily Products Section -->
+    <section class="daily-products">
+
+        <!-- Product List -->
+        <h2>🛒 Daily Essentials</h2>
+        <div class="products-container">
+            <div class="product-card" data-name="Milk">
+                <img src="milk.jpg" alt="Milk">
+                <h3>Milk</h3>
+                <p>Rich in calcium and essential nutrients.</p>
+                <p><strong>Price:</strong> $2.99 per liter</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Eggs">
+                <img src="egg.jpg" alt="Eggs">
+                <h3>Eggs</h3>
+                <p>Great source of protein and vitamins.</p>
+                <p><strong>Price:</strong> $3.99 per dozen</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Bread">
+                <img src="bread.jpeg" alt="Bread">
+                <h3>Bread</h3>
+                <p>Soft and fresh whole wheat bread.</p>
+                <p><strong>Price:</strong> $2.49 per loaf</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Butter">
+                <img src="butter.jpg" alt="Butter">
+                <h3>Butter</h3>
+                <p>Creamy and smooth, perfect for breakfast.</p>
+                <p><strong>Price:</strong> $4.49 per 250g</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Bread">
+                <img src="bread.jpeg" alt="Bread">
+                <h3>Bread</h3>
+                <p>Soft and fresh whole wheat bread.</p>
+                <p><strong>Price:</strong> $2.49 per loaf</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Butter">
+                <img src="butter.jpg" alt="Butter">
+                <h3>Butter</h3>
+                <p>Creamy and smooth, perfect for breakfast.</p>
+                <p><strong>Price:</strong> $4.49 per 250g</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+        </div>
+
+    </section>
+    <section class="extra-info">
+        <h2>Why Choose Fresh Dairy Products?</h2>
+        <p>Fresh dairy products are a rich source of essential nutrients, including calcium, protein, and vitamins. They help strengthen bones, support muscle growth, and boost overall health.</p>
+    
+        <h3>Popular Dairy Products:</h3>
+        <p>🥛 Milk: Full cream, Skimmed, Almond, Soy<br>
+           🧀 Cheese: Cheddar, Mozzarella, Parmesan<br>
+           🍦 Yogurt: Greek Yogurt, Flavored, Probiotic</p>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Fresh Store | All Rights Reserved</p>
+    </footer>
+
+    <script src="dailyp.js"></script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasonal Fresh Fruits</title>
+    <link rel="stylesheet" href="fruits.css">
+    <!-- Font Awesome CDN (Latest Version) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Page Title -->
+    <header class="title-section">
+        <!-- Floating Back Button -->
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Back
+        </a>
+        <h1><i class="fas fa-apple-alt"></i> Seasonal Fresh Fruits</h1>
+        <p>"Eat fresh, stay healthy! Enjoy nature's sweetest gifts." 🍍</p>
+    
+        <!-- Cart Icon -->
+        <a href="addtocart.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i> Cart
+        </a>
+        
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="search-bar" placeholder="Search for fresh fruits..." onkeyup="searchFruits()">
+        </div>
+        <p class="search-info">Discover fresh, seasonal fruits.</p>
+    </div>
+
+    <!-- Seasonal Fruits Section -->
+    <section class="seasonal-fruits">
+        
+        <!-- Spring Fruits -->
+        <h2>🌸 Spring Fruits</h2>
+        <div class="fruits-container">
+            <div class="product-card" data-name="Strawberry">
+                <img src="pine.jpeg" alt="Strawberry">
+                <h3>Strawberry</h3>
+                <p>Rich in Vitamin C and antioxidants.</p>
+                <p><strong>Calories:</strong> 32 kcal</p>
+                <p><strong>Price:</strong> $3.99 per lb</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Cherry">
+                <img src="pine.jpeg" alt="Cherry">
+                <h3>Cherry</h3>
+                <p>High in fiber and potassium.</p>
+                <p><strong>Calories:</strong> 50 kcal</p>
+                <p><strong>Price:</strong> $4.99 per lb</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Pineapple">
+                <img src="pine.jpeg" alt="Pineapple">
+                <h3>Pineapple</h3>
+                <p>Boosts digestion and immunity.</p>
+                <p><strong>Calories:</strong> 82 kcal</p>
+                <p><strong>Price:</strong> $2.99 per piece</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Pineberry">
+                <img src="pine.jpeg" alt="Pineberry">
+                <h3>Pineberry</h3>
+                <p>A white strawberry variety with a hint of pineapple taste.</p>
+                <p><strong>Calories:</strong> 30 kcal</p>
+                <p><strong>Price:</strong> $5.99 per lb</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Summer Fruits -->
+        <h2>☀️ Summer Fruits</h2>
+        <div class="fruits-container">
+            <div class="product-card" data-name="Watermelon">
+                <img src="pine.jpeg" alt="Watermelon">
+                <h3>Watermelon</h3>
+                <p>Refreshing and hydrating, packed with lycopene.</p>
+                <p><strong>Calories:</strong> 30 kcal</p>
+                <p><strong>Price:</strong> $3.49 per piece</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Mango">
+                <img src="pine.jpeg" alt="Mango">
+                <h3>Mango</h3>
+                <p>The king of fruits, rich in Vitamin A and fiber.</p>
+                <p><strong>Calories:</strong> 60 kcal</p>
+                <p><strong>Price:</strong> $1.99 per piece</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Peach">
+                <img src="pine.jpeg" alt="Peach">
+                <h3>Peach</h3>
+                <p>Juicy and delicious, packed with vitamins and fiber.</p>
+                <p><strong>Calories:</strong> 39 kcal</p>
+                <p><strong>Price:</strong> $2.49 per lb</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Pinecone Fruit">
+                <img src="pine.jpeg" alt="Pinecone Fruit">
+                <h3>Pinecone Fruit</h3>
+                <p>A rare fruit with a sweet, nutty flavor.</p>
+                <p><strong>Calories:</strong> 70 kcal</p>
+                <p><strong>Price:</strong> $7.99 per lb</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+            </div>
+            <!-- 🍂 Autumn Fruits -->
+        <h2>🍂 Autumn Fruits</h2>
+        <div class="fruits-container">
+            <div class="product-card" data-name="Strawberry">
+                <img src="pine.jpeg" alt="Strawberry">
+                <h3>Strawberry</h3>
+                <p>Rich in Vitamin C and antioxidants.</p>
+                <p><strong>Calories:</strong> 32 kcal</p>
+                <p><strong>Price:</strong> $3.99 per lb</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Cherry">
+                <img src="pine.jpeg" alt="Cherry">
+                <h3>Cherry</h3>
+                <p>High in fiber and potassium.</p>
+                <p><strong>Calories:</strong> 50 kcal</p>
+                <p><strong>Price:</strong> $4.99 per lb</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Pineapple">
+                <img src="pine.jpeg" alt="Pineapple">
+                <h3>Pineapple</h3>
+                <p>Boosts digestion and immunity.</p>
+                <p><strong>Calories:</strong> 82 kcal</p>
+                <p><strong>Price:</strong> $2.99 per piece</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Pineberry">
+                <img src="pine.jpeg" alt="Pineberry">
+                <h3>Pineberry</h3>
+                <p>A white strawberry variety with a hint of pineapple taste.</p>
+                <p><strong>Calories:</strong> 30 kcal</p>
+                <p><strong>Price:</strong> $5.99 per lb</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- ❄️ Winter Fruits -->
+        <h2>❄️ Winter Fruits</h2>
+        <div class="fruits-container">
+            <div class="product-card" data-name="Strawberry">
+                <img src="pine.jpeg" alt="Strawberry">
+                <h3>Strawberry</h3>
+                <p>Rich in Vitamin C and antioxidants.</p>
+                <p><strong>Calories:</strong> 32 kcal</p>
+                <p><strong>Price:</strong> $3.99 per lb</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Cherry">
+                <img src="pine.jpeg" alt="Cherry">
+                <h3>Cherry</h3>
+                <p>High in fiber and potassium.</p>
+                <p><strong>Calories:</strong> 50 kcal</p>
+                <p><strong>Price:</strong> $4.99 per lb</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Pineapple">
+                <img src="pine.jpeg" alt="Pineapple">
+                <h3>Pineapple</h3>
+                <p>Boosts digestion and immunity.</p>
+                <p><strong>Calories:</strong> 82 kcal</p>
+                <p><strong>Price:</strong> $2.99 per piece</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Pineberry">
+                <img src="pine.jpeg" alt="Pineberry">
+                <h3>Pineberry</h3>
+                <p>A white strawberry variety with a hint of pineapple taste.</p>
+                <p><strong>Calories:</strong> 30 kcal</p>
+                <p><strong>Price:</strong> $5.99 per lb</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- 🥭 Exotic Fruits -->
+        <h2>🥭 Exotic Fruits</h2>
+        <div class="fruits-container">
+            <div class="product-card" data-name="Strawberry">
+                <img src="pine.jpeg" alt="Strawberry">
+                <h3>Strawberry</h3>
+                <p>Rich in Vitamin C and antioxidants.</p>
+                <p><strong>Calories:</strong> 32 kcal</p>
+                <p><strong>Price:</strong> $3.99 per lb</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Cherry">
+                <img src="pine.jpeg" alt="Cherry">
+                <h3>Cherry</h3>
+                <p>High in fiber and potassium.</p>
+                <p><strong>Calories:</strong> 50 kcal</p>
+                <p><strong>Price:</strong> $4.99 per lb</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Pineapple">
+                <img src="pine.jpeg" alt="Pineapple">
+                <h3>Pineapple</h3>
+                <p>Boosts digestion and immunity.</p>
+                <p><strong>Calories:</strong> 82 kcal</p>
+                <p><strong>Price:</strong> $2.99 per piece</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Pineberry">
+                <img src="pine.jpeg" alt="Pineberry">
+                <h3>Pineberry</h3>
+                <p>A white strawberry variety with a hint of pineapple taste.</p>
+                <p><strong>Calories:</strong> 30 kcal</p>
+                <p><strong>Price:</strong> $5.99 per lb</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- 🌿 Rare Fruits -->
+        <h2>🌿 Rare Fruits</h2>
+        <div class="fruits-container">
+            <div class="product-card" data-name="Strawberry">
+                <img src="pine.jpeg" alt="Strawberry">
+                <h3>Strawberry</h3>
+                <p>Rich in Vitamin C and antioxidants.</p>
+                <p><strong>Calories:</strong> 32 kcal</p>
+                <p><strong>Price:</strong> $3.99 per lb</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Cherry">
+                <img src="pine.jpeg" alt="Cherry">
+                <h3>Cherry</h3>
+                <p>High in fiber and potassium.</p>
+                <p><strong>Calories:</strong> 50 kcal</p>
+                <p><strong>Price:</strong> $4.99 per lb</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Pineapple">
+                <img src="pine.jpeg" alt="Pineapple">
+                <h3>Pineapple</h3>
+                <p>Boosts digestion and immunity.</p>
+                <p><strong>Calories:</strong> 82 kcal</p>
+                <p><strong>Price:</strong> $2.99 per piece</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Pineberry">
+                <img src="pine.jpeg" alt="Pineberry">
+                <h3>Pineberry</h3>
+                <p>A white strawberry variety with a hint of pineapple taste.</p>
+                <p><strong>Calories:</strong> 30 kcal</p>
+                <p><strong>Price:</strong> $5.99 per lb</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+        </div>
+    </section>
+<!-- Extra Information -->
+<section class="extra-info">
+    <h2>Why Choose Fresh Fruits?</h2>
+    <p>Fresh fruits are packed with essential nutrients, vitamins, and antioxidants that promote overall health. Including a variety of fruits in your diet helps in digestion, improves immunity, and provides natural energy.</p>
+
+    <h3>Seasonal Fruits:</h3>
+    <p>🍉 Summer: Watermelon, Mango, Pineapple<br>
+       🍏 Winter: Apples, Oranges, Grapes<br>
+       🍓 Spring: Strawberries, Berries, Cherries</p>
+</section>
+<footer class="footer">
+    <p>&copy; 2024 Fresh Organic Market | All Rights Reserved</p>
+</footer>
+    <script src="dailyp.js"></script>
+</body>
+</html>
