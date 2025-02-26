@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Deal - Fresh Apples</title>
+    <link rel="stylesheet" href="deal.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="title-section">
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Back to Deals
+        </a>
+        <h1><i class="fas fa-tag"></i> Hot Deal - Fresh Apples</h1>
+    </header>
+
+    <section class="deal-container">
+        <!-- Image & Price Section -->
+        <div class="top-section">
+            <div class="deal-image">
+                <span class="discount-badge">20% OFF</span>
+                <img src="apple.jpg" alt="Fresh Apples">
+            </div>
+
+            <div class="deal-info">
+                <h2>Fresh Organic Apples</h2>
+                <p class="short-desc">Crisp, juicy, and packed with nutrients. Perfect for a healthy snack!</p>
+
+                <div class="price-section">
+                    <p class="original-price">Original Price: <s>$7.49</s></p>
+                    <p class="discounted-price"><strong>Now: $5.99 per kg</strong></p>
+                    <p class="savings">You Save: $1.50</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why You'll Love It & Nutrition Facts -->
+        <div class="mid-section">
+            <div class="why-love">
+                <h3>Why You'll Love It 🍏</h3>
+                <ul>
+                    <li>✅ 100% Organic & Pesticide-Free</li>
+                    <li>✅ Rich in Fiber & Antioxidants</li>
+                    <li>✅ Perfect for Juices, Salads & Snacking</li>
+                </ul>
+            </div>
+
+            <div class="nutrition-facts">
+                <h3>Nutrition Facts (Per 100g)</h3>
+                <table>
+                    <tr><td>Calories</td><td>52 kcal</td></tr>
+                    <tr><td>Carbohydrates</td><td>14g</td></tr>
+                    <tr><td>Fiber</td><td>2.4g</td></tr>
+                    <tr><td>Vitamin C</td><td>8% of RDI</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Delivery Info & Add to Cart -->
+        <div class="bottom-section">
+            <div class="delivery-info">
+                <h3>Delivery Information 🚚</h3>
+                <p>✅ **Free Delivery** on orders above $20.  
+                   ✅ **Same-Day Delivery** available in selected areas.  
+                   ✅ **Eco-Friendly Packaging.**  
+                </p>
+            </div>
+        </div>
+        <button class="add-to-cart" 
+        data-name="Fresh Organic Apples" 
+        data-price="5.99" 
+        data-image="apple.jpg">
+    <i class="fas fa-cart-plus"></i> Add to Cart
+</button>
+
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 Fresh Organic Market | All Rights Reserved</p>
+    </footer>
+    <script src=".js"></script>
+</body>
+</html>

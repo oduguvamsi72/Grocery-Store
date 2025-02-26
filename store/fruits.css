@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('fruits-bg.jpg') center/cover no-repeat fixed;
+    color: #333;
+    text-align: center;
+}
+
+/* Title Section */
+.title-section {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 5px 20px;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+body {
+    padding-top: 140px; 
+}
+
+/* Floating Back Button */
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: black;
+    font-size: 15px;
+    padding: 5px 7.5px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.back-btn i {
+    font-size: 20px;
+}
+
+.back-btn:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
+}
+.cart-icon {
+    color:#444;
+    align-items: center;
+    font-size: 19px;
+}
+.cart-icon:hover{
+    font-size: 20px;
+color: #333;
+}
+
+/* Search Bar */
+.search-container {
+    position: fixed;
+    top: 13px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    padding: 5px;
+    border-radius: 25px;
+    border: 2px solid #ff5733;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px;
+}
+
+
+/* Fruits Section */
+.fruits-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin:0px 60px; /* Center the grid */
+}
+
+/* Fruit Cards */
+.product-card{
+    background: white;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid #ff5733;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px; /* Set a fixed height for consistency */
+    object-fit: cover; /* Ensure images fit well */
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    color: #ff5733;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.product-card button {
+    background: #ff5733;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.product-card button:hover {
+    background: #e74c3c;
+}
+.extra-info {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .fruits-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 cards per row on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .fruits-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .fruits-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 card per row on mobile */
+    }
+
+    .fruit-card img {
+        height: 150px; /* Adjust image size for small screens */
+    }
+}
+/* Footer */
+.footer {
+    background:#333;
+    color:white;
+    text-align: center;
+    padding: 1px 20px;
+    font-size: 13px;
+    width: 100%;
+    margin-top: 10px;
+}

@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('term.jpg') center/cover no-repeat fixed; /* Same as Login Page */
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Floating Back Button */
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background:white;
+    color: black;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.back-btn i {
+    font-size: 20px;
+}
+
+.back-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #fbe3e8, #ffe4c4);
+}
+
+/* Terms & Conditions Container */
+.terms-container {
+    background: linear-gradient(135deg, #fbe3e8, #ffe4c4);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 85%;
+    max-width: 800px;
+    margin-top: 80px;
+    margin-bottom:60px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease-in-out;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Terms Heading */
+.terms-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff5733;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Terms Content */
+.terms-content {
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    background: none; /* No background */
+}
+
+/* Terms Subheadings */
+.terms-content h3 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+/* Terms Paragraphs */
+.terms-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Links */
+.terms-content a {
+    color: #ff5733;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.terms-content a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background:#333;
+    color:white;
+    text-align: center;
+    padding: 1px 20px;
+    font-size: 13px;
+    width: 100%;
+    margin-top: 552px;
+    position: fixed;
+}

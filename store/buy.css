@@ -1,0 +1,153 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('F.jpg') center/cover no-repeat fixed;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.checkout-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #28a745;
+}
+
+/* Cart Section */
+.cart-container {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h3 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+td img {
+    width: 50px;
+    border-radius: 5px;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #28a745;
+    border-radius: 5px;
+}
+
+.remove-btn {
+    background: red;
+    color: white;
+    padding: 5px 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-btn:hover {
+    background: darkred;
+}
+
+/* Billing & Payment Side-by-Side */
+.checkout-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.billing, .payment {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.checkout-btn {
+    width: 100%;
+    background: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover {
+    background: #218838;
+}
+
+/* Floating Back Button */
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: black;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.back-btn:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
+}
+
